@@ -28,7 +28,7 @@ func Run(searchTerm string) {
 
 	// 개별 피드를 처리하는 동안 대기해야 할
 	// 고루틴의 개수를 설정한다.
-	waitGroup.add(len(feeds))
+	waitGroup.Add(len(feeds))
 
 	// 각기 다른 종류의 피드를 처리할 고루틴을 실행한다.
 	for _, feed := range feeds {
